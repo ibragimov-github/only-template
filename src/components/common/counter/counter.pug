@@ -1,0 +1,23 @@
+mixin counter(props)
+    .counter&attributes(attributes)
+    .container
+      h1 Значение счетчика на активном слайде:
+      span.result
+      button.open  Открыть
+      .swiper-container
+        button.close Закрыть
+        .swiper 
+          .swiper-button-prev.navigate 
+            +svg('Vector')
+          .swiper-wrapper 
+            .swiper-slide Slide 1
+            .swiper-slide Slide 2
+            .swiper-slide Slide 3
+          .swiper-button-next.navigate 
+            +svg('Vector')
+        .nav
+          button.decrement - 
+          .res 
+          button.increment +
+
+          
